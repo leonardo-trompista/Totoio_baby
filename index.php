@@ -51,9 +51,7 @@ if (in_array($page, $allowedPages)) {
     
     </main>
 
-    <footer>
-        <p>&copy; 2026 - Ateliê</p>
-    </footer>
+    <?php include 'includes/footer.inc.php'; ?>
 
 </body>
 </html>
