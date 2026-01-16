@@ -17,7 +17,10 @@ $allowedPages = [
     <title>Ateliê index</title>
 
     <!-- Estilos -->
-    <link rel="stylesheet" href="css/style.css">
+    
+    <link rel="stylesheet" href="styles/simple.css">
+    <link rel="stylesheet" href="styles/custom.css">
+
     
     
 </head>
