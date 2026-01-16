@@ -34,9 +34,9 @@ $allowedPages = [
 </nav>
     <main>
         
-        <p><?php echo 'Testando o poder do php, tentando mudar o texto'; ?></p>
-        <p><?php echo 'Essa parte vem do github!'; ?></p>
-        <p><?php echo 'agora eu teste sei mudar o arquivo no github e rodar a alteracao no servidor'; ?></p>
+        <p>Testando o poder do php, tentando mudar o texto<p>
+        <p>Essa parte vem do github!</p>
+        <p>agora eu teste sei mudar o arquivo no github e rodar a alteracao no servidor<p>
 <?php
 #require 'pages/menu.php';
 
