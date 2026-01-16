@@ -3,8 +3,6 @@ $page = $_GET['page'] ?? 'home';
 
 $allowedPages = [
     'home','ingredients'];
-
-        ob_start(); // (opcional, mas boa prática)
 ?>
 
 
@@ -30,7 +28,7 @@ $allowedPages = [
     </header>
 <nav>
 
-    <<a href="?page=home">Home</a>
+    <a href="?page=home">Home</a>
     <a href="?page=ingredients">Ingredients</a>
 
 </nav>
@@ -39,11 +37,6 @@ $allowedPages = [
         <p><?php echo 'Testando o poder do php, tentando mudar o texto'; ?></p>
         <p><?php echo 'Essa parte vem do github!'; ?></p>
         <p><?php echo 'agora eu teste sei mudar o arquivo no github e rodar a alteracao no servidor'; ?></p>
-    </main>
-
-    <footer>
-        <p>&copy; 2026 - Ateliê</p>
-    </footer>
 <?php
 #require 'pages/menu.php';
 
@@ -53,5 +46,14 @@ if (in_array($page, $allowedPages)) {
         echo "<h1>Pagina nao encontrada</h1>";
         }
 ?>
+    
+    
+    
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Ateliê</p>
+    </footer>
+
 </body>
 </html>
