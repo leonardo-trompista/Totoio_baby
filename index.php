@@ -45,12 +45,12 @@ $allowedPages = [
         <p>&copy; 2026 - Ateliê</p>
     </footer>
 <?php
-require 'pages/menu.php';
+#require 'pages/menu.php';
 
 if (in_array($page, $allowedPages)) {
     require "pages/$page.php";
     } else {
-        require "pages/404.php";
+        echo "<h1>Pagina nao encontrada</h1>";
         }
 ?>
 </body>
