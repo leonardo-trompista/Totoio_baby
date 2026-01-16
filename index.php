@@ -24,7 +24,7 @@ $allowedPages = [
 <body>
 
     <header>
-        <h1>Ateliê</h1>
+        <h1>Ateliê Totoio Baby</h1>
     </header>
 <nav>
 
@@ -34,9 +34,7 @@ $allowedPages = [
 </nav>
     <main>
         
-        <p>Testando o poder do php, tentando mudar o texto<p>
-        <p>Essa parte vem do github!</p>
-        <p>agora eu teste sei mudar o arquivo no github e rodar a alteracao no servidor<p>
+    
 <?php
 #require 'pages/menu.php';
 
