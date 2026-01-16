@@ -28,26 +28,23 @@ $allowedPages = [
 
     <header>
         <h1>Ateliê Totoio Baby</h1>
+    
+        <nav>
+
+            <a href="?page=home">Home</a>
+            <a href="?page=ingredients">Ingredients</a>
+
+        </nav>
     </header>
-<nav>
-
-    <a href="?page=home">Home</a>
-    <a href="?page=ingredients">Ingredients</a>
-
-</nav>
     <main>
         
-    
-<?php
-#require 'pages/menu.php';
-
-if (in_array($page, $allowedPages)) {
-    require "pages/$page.php";
+    <?php
+    if (in_array($page, $allowedPages, true)) {
+        require __DIR__ . "/pages/$page.php";
     } else {
-        echo "<h1>Pagina nao encontrada</h1>";
-        }
-?>
-    
+        echo "<h1>Página não encontrada</h1>";
+    }
+    ?>   
     
     
     </main>
