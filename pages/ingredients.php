@@ -1,10 +1,3 @@
-<?php 
-
-$pageTitle = 'Ingredients';
-$headerImg = 'images/pexels-julia-volk-5273044.jpg';
-include 'includes/header.inc.php'; 
-
-?>
     <h1>Nossos Ingredientes</h1>
     <p>
       At Culinary Cove, our ethos is deeply rooted in the belief that
@@ -35,5 +28,3 @@ include 'includes/header.inc.php';
       meal—it becomes a journey into a world of pure, unadulterated
       taste.
     </p>
-
-<?php include 'includes/footer.inc.php'; ?>
