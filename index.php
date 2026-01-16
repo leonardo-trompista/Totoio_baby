@@ -2,9 +2,7 @@
 $page = $_GET['page'] ?? 'home';
 
 $allowedPages = [
-    'home',
-        'ingredients'
-        ];
+    'home','ingredients'];
 
         ob_start(); // (opcional, mas boa prática)
 ?>
@@ -18,11 +16,11 @@ $allowedPages = [
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ateliê</title>
+    <title>Ateliê index</title>
 
     <!-- Estilos -->
     <link rel="stylesheet" href="css/style.css">
-    <a href="?page=ingredients">Ingredients</a>
+    
     
 </head>
 <body>
@@ -30,7 +28,12 @@ $allowedPages = [
     <header>
         <h1>Ateliê</h1>
     </header>
+<nav>
 
+    <<a href="?page=home">Home</a>
+    <a href="?page=ingredients">Ingredients</a>
+
+</nav>
     <main>
         
         <p><?php echo 'Testando o poder do php, tentando mudar o texto'; ?></p>
