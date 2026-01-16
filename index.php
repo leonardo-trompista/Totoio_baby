@@ -1,3 +1,17 @@
+<?php
+$page = $_GET['page'] ?? 'home';
+
+$allowedPages = [
+    'home',
+        'ingredients'
+        ];
+
+        ob_start(); // (opcional, mas boa prática)
+?>
+
+
+
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -19,12 +33,20 @@
         
         <p><?php echo 'Testando o poder do php, tentando mudar o texto'; ?></p>
         <p><?php echo 'Essa parte vem do github!'; ?></p>
-        <p><?php echo 'agora eu sei mudar o arquivo no github e rodar a alteracao no servidor'; ?></p>
+        <p><?php echo 'agora eu teste sei mudar o arquivo no github e rodar a alteracao no servidor'; ?></p>
     </main>
 
     <footer>
         <p>&copy; 2026 - Ateliê</p>
     </footer>
+<?php
+require 'pages/menu.php';
 
+if (in_array($page, $allowedPages)) {
+    require "pages/$page.php";
+    } else {
+        require "pages/404.php";
+        }
+?>
 </body>
 </html>
