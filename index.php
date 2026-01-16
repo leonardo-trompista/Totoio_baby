@@ -18,8 +18,8 @@ $allowedPages = [
 
     <!-- Estilos -->
     
-    <link rel="stylesheet" href="styles/simple.css">
-    <link rel="stylesheet" href="styles/custom.css">
+    <link rel="stylesheet" href="css/simple.css">
+    <link rel="stylesheet" href="css/custom.css">
 
     
     
