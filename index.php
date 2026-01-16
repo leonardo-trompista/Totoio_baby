@@ -22,6 +22,8 @@ $allowedPages = [
 
     <!-- Estilos -->
     <link rel="stylesheet" href="css/style.css">
+    <a href="?page=ingredients">Ingredients</a>
+    
 </head>
 <body>
 
